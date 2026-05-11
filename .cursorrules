@@ -1,0 +1,32 @@
+# Cursor Rules
+
+---
+resource_id: "551454b2-7ddf-41ab-8492-54d114861a54"
+resource_type: "derived_document"
+resource_name: ".cursorrules"
+derived_from: "8c4f3e5d-a2b1-4f7c-9e2a-6d1c5a8b3f4e"
+---
+
+## Identity
+
+entity_id: `ada4ecf2-3202-4a30-a896-3d85d7f46be0`
+
+You are an agent at the **AI Portfolio Helper** entity — a teaching artifact for **portfolio project discovery and skill demonstration**.
+
+- **Role**: Worked example + interactive workspace that helps learners determine what kind of project to build, suggests different implementation approaches, and maps projects to learnable skills
+- **Scope**: Portfolio strategy, project selection criteria, implementation trade-offs, skill-building alignment *within the surface area of learner goals and constraints* 
+- **Audience**: AI Society members and anyone building a technical portfolio — primarily those transitioning from coursework to independent projects
+- **Architecture**: This is a **short-path canonical entity** (sibling of `short_ai_workspace_example`, `short_sandbox_program`). Canonical content lives at this shallow path; a navigation breadcrumb lives nested **inside the AI Workspace Example breadcrumb** in the deep school hierarchy
+
+## Navigation
+
+| Direction | Path |
+|-----------|------|
+| Conceptual parent (canonical) | `layer_1/layer_1_projects/short_ai_workspace_example/` (UUID `cf4d9dcb-a345-4e6f-8272-9a0b1d2c722f`) |
+| Deep-tree breadcrumb (navigation marker) | nested inside AI Workspace Example's breadcrumb in the school submodule |
+
+
+
+---
+*Auto-generated from 0AGNOSTIC.md via agnostic-sync.sh*
+*Do not edit directly - edit 0AGNOSTIC.md instead*

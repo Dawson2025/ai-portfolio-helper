@@ -1,0 +1,33 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+
+# Logs / temp
+*.log
+*.tmp
+.agnostic-sync.lock
+.propagation-needed
+
+# Local-only secrets
+.env
+.env.local
+*.local
+
+# OS-specific cache
+.cache/
