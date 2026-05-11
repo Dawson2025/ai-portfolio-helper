@@ -1,4 +1,4 @@
-Required Notice: Copyright (c) 2026 Dawson
+Required Notice: Copyright (c) 2026 Dawson Packer
 
 ---
 

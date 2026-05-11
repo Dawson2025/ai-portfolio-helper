@@ -51,7 +51,7 @@ Newly scaffolded — content (project frameworks, case studies, skill mappings) 
 
 **Required Notice** (must be preserved in any redistribution):
 
-> Required Notice: Copyright (c) 2026 Dawson
+> Required Notice: Copyright (c) 2026 Dawson Packer
 
 For commercial licensing, contact the copyright holder.
 
@@ -59,4 +59,4 @@ For commercial licensing, contact the copyright holder.
 
 If you build on this work in any context where attribution is appropriate, please credit:
 
-> Based on the AI Portfolio Helper by Dawson (https://github.com/Dawson2025/ai-portfolio-helper)
+> Based on the AI Portfolio Helper by Dawson Packer (https://github.com/Dawson2025/ai-portfolio-helper)
