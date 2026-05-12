@@ -24,6 +24,8 @@ You are an agent at the **AI Portfolio Helper** entity — a teaching artifact f
 | User asks for a worked example of a portfolio project or skill-building alignment | Load this 0AGNOSTIC.md, then check `.0agnostic/01_knowledge/examples/` for existing examples before authoring new ones |
 | User wants to add a portfolio project example or interactive workflow | Load this 0AGNOSTIC.md + check `.0agnostic/01_knowledge/examples/` to avoid duplication |
 | Resuming work / new session | Load `.0agnostic/05_handoff_documents/` for latest handoff, then `.0agnostic/04_episodic_memory/` |
+| **New user / student asks "what should I do?" or "where do I start?"** | Read the "Start Here — for new users / students" section at the top of this file. It is the authoritative answer. Walk them through the 4 steps + the three opening questions (goal, skill, constraints). |
+| Working in a specific stage / moving from one stage to the next | Read the corresponding `layer_1_group/layer_1_99_stages/stage_1_NN_*/README.md`. Stages are the workflow scaffold — use them to organize work, but stages can be empty if not in use. |
 
 ## Navigation
 

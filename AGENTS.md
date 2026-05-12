@@ -19,6 +19,42 @@ You are an agent at the **AI Portfolio Helper** entity — a teaching artifact f
 - **Audience**: AI Society members and anyone building a technical portfolio — primarily those transitioning from coursework to independent projects
 - **Architecture**: This is a **short-path canonical entity** (sibling of `short_ai_workspace_example`, `short_sandbox_program`). Canonical content lives at this shallow path; a navigation breadcrumb lives nested **inside the AI Workspace Example breadcrumb** in the deep school hierarchy
 
+## Start Here — for new users / students
+
+**If you just cloned this repo and you don't know what to do, do this:**
+
+1. **Think about why you're building a portfolio.** Job applications? Grad school? Switching majors? Personal proof? Different goals → different project choices. You don't need a final answer — a rough direction is enough to start.
+2. **Identify one skill you want to demonstrate** (e.g., "I can ship a working web app", "I can train a small ML model", "I can build a tool that solves a real personal pain point"). Pick *one* — portfolios fail when they try to demonstrate everything.
+3. **Open `layer_1_group/layer_1_99_stages/stage_1_01_request_gathering/README.md`.** Write down: (a) your portfolio goal, (b) the skill you want to demonstrate, (c) any constraints (time, tech you already know, tech you want to learn). If you're an agent helping a student, walk them through these three questions.
+4. **Move through the stages in order** (01 → 02 → ... → 10). For portfolio work, the natural emphasis is stages 01 (goal/skill), 02 (research — what kinds of projects demonstrate this skill?), 04 (design — pick one), 06 (development — build it), 07 (testing — does it actually work?), 10 (current product — write it up for your portfolio audience).
+
+**If you are an AI agent in a fresh session here and a student/user asks "what should I do?":**
+
+- Tell them **this entity helps them figure out what to build for their portfolio** — what project, what skills it teaches, what trade-offs to consider between different implementation approaches.
+- Ask them the three questions from Step 3 above: (a) goal, (b) skill to demonstrate, (c) constraints. Don't let them skip — vague goals lead to vague projects.
+- Walk them through Steps 1–4. Help them write a clear problem statement into `stage_1_01_request_gathering/`.
+- If they already have a project idea but want help evaluating it, jump to `stage_1_02_research` and `stage_1_04_design`: research similar projects + design 2–3 implementation alternatives with trade-offs.
+- If they don't have a project idea at all, start at `stage_1_01` and use the questions above. Resist the temptation to recommend a project from a generic list — the *right* project depends on their specific goal + skill gap.
+- This entity is the **companion** to AI Workspace Example. If they need help configuring their AI coding agent to build the project (settings, hooks, skills, MCP), point them at the workspace_example entity (UUID `cf4d9dcb-a345-4e6f-8272-9a0b1d2c722f`, public repo `Dawson2025/ai-workspace-example`).
+
+**Stage layout** (`layer_1_group/layer_1_99_stages/`):
+
+| Stage | Purpose for this entity |
+|---|---|
+| `stage_1_01_request_gathering` | Capture: what is the portfolio goal? What skill demonstrates it? What constraints exist? |
+| `stage_1_02_research` | Investigate: what kinds of projects demonstrate this skill? What have others built? |
+| `stage_1_03_instructions` | Constraints: time budget, tech the learner already knows, tech they want to learn |
+| `stage_1_04_design` | Compare 2–3 implementation approaches with trade-offs; pick one |
+| `stage_1_05_planning` | Break the chosen project into milestones |
+| `stage_1_06_development` | Build it |
+| `stage_1_07_testing` | Verify the project works and demonstrates the intended skill |
+| `stage_1_08_criticism` | Honest review: would a recruiter / admissions reviewer find this convincing? |
+| `stage_1_09_fixing` | Address the criticism — fix or reframe weaknesses |
+| `stage_1_10_current_product` | The polished project + the portfolio write-up describing it |
+| `stage_1_11_archives` | Old versions, abandoned attempts, lessons learned |
+
+Empty stages are valid — only fill stages that are actually being used.
+
 ## Conceptual Parent
 
 This entity is a **sub-feature of the AI Workspace Example entity** (UUID `cf4d9dcb-a345-4e6f-8272-9a0b1d2c722f`, canonical at `layer_1/layer_1_projects/short_ai_workspace_example/`). It extends the AI Workspace Example's teaching charter — moving beyond "how to configure your harness" to "what should you build with that harness, and what skills does it help you demonstrate?"
@@ -49,6 +85,8 @@ These cascade from AI Workspace Example and the school hierarchy via the deep-tr
 | User asks for a worked example of a portfolio project or skill-building alignment | Load this 0AGNOSTIC.md, then check `.0agnostic/01_knowledge/examples/` for existing examples before authoring new ones |
 | User wants to add a portfolio project example or interactive workflow | Load this 0AGNOSTIC.md + check `.0agnostic/01_knowledge/examples/` to avoid duplication |
 | Resuming work / new session | Load `.0agnostic/05_handoff_documents/` for latest handoff, then `.0agnostic/04_episodic_memory/` |
+| **New user / student asks "what should I do?" or "where do I start?"** | Read the "Start Here — for new users / students" section at the top of this file. It is the authoritative answer. Walk them through the 4 steps + the three opening questions (goal, skill, constraints). |
+| Working in a specific stage / moving from one stage to the next | Read the corresponding `layer_1_group/layer_1_99_stages/stage_1_NN_*/README.md`. Stages are the workflow scaffold — use them to organize work, but stages can be empty if not in use. |
 
 ## Navigation
 
